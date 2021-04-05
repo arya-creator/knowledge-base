@@ -22,6 +22,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ArticleItemComponent } from './article-item/article-item.component';
+import { DefaultLayoutComponent } from './default-layout/default-layout.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,9 @@ import { ArticleItemComponent } from './article-item/article-item.component';
     ArticlesListComponent,
     ArticleDetailComponent,
     SubscribeFormComponent,
-    ArticleItemComponent
+    ArticleItemComponent,
+
+    DefaultLayoutComponent
   ],
   imports: [
     BrowserModule,

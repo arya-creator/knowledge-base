@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
+  navMenu = ["Business", "Technology", "Markets", "Entertainment", "Sports", "Science", "Health", "Environment" ]
+  menuSelected = false;
   constructor() { }
 
   ngOnInit(): void {
