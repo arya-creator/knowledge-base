@@ -1,0 +1,17 @@
+.example-card {
+  margin: 30px;
+  width: 400px;
+  min-height: 400px;
+
+  box-shadow: 5px 10px #dad5d5;
+  font-family: "Roboto";
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+
+mat-card-title {
+  margin-left: 0;
+}

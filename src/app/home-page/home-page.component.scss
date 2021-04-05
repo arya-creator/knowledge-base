@@ -1,0 +1,138 @@
+//
+header {
+  top: 0;
+  width: 100%;
+  background: #4a148c;
+  padding-top: 20px;
+
+  z-index: 4;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-menu {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.app-main {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  height: 420px;
+  // background: #2a033a;
+  background: #4a148c;
+  border-color: transparent;
+}
+
+.app-main::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../assets/bootstrap-solid.svg");
+  background-size: 400px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: 60% 20px;
+  opacity: 0.2;
+}
+
+.main-section {
+  display: block;
+  width: 90%;
+  position: absolute;
+  z-index: 0;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-headline {
+  color: #fff;
+}
+
+.app-main h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 56px;
+  margin: 15px 5px;
+}
+
+.app-header {
+  display: grid;
+  // grid-template-columns: 30% auto;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "br user"
+    "br nav";
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background: white;
+  color: #4a148c;
+}
+
+.brand {
+  grid-area: br;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.brand-title {
+  margin: 40px;
+  padding: 40px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+.brand-desc {
+  margin-top: 0;
+  padding-top: 0;
+  margin-left: 40px;
+  font-size: small;
+}
+
+.app-user-info ul {
+  grid-area: user;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.app-user-info li {
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+}
+.app-user-info li a {
+  text-decoration: none;
+  color: #4a148c;
+}
+
+.app-nav {
+  grid-area: nav;
+}
+
+.app-nav-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.app-nav-menu li {
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+}
+.app-nav-menu a {
+  text-decoration: none;
+  color: #4a148c;
+}
