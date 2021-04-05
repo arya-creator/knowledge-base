@@ -7,8 +7,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 const routes: Routes = [
   {path : '', redirectTo : 'home', pathMatch :'full'},
   {path : 'home', component : HomePageComponent},
-  {path : 'articles', component : ArticlesListComponent},
-  {path : ':id', component : ArticleDetailComponent}
+  // {path : 'articles', component : ArticlesListComponent},
+  // {path : ':id', component : ArticleDetailComponent}
 ];
 
 export const appRouting = RouterModule.forRoot(routes);

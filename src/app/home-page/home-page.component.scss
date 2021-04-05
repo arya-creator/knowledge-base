@@ -19,7 +19,6 @@ header {
   color: white;
   font-size: 0.9rem;
 }
-
 .app-main {
   display: block;
   overflow: hidden;
@@ -66,6 +65,7 @@ header {
   margin: 15px 5px;
 }
 
+
 .app-header {
   display: grid;
   // grid-template-columns: 30% auto;
@@ -88,8 +88,8 @@ header {
   padding-bottom: 40px;
 }
 .brand-title {
-  margin: 40px;
-  padding: 40px;
+  // margin: 40px;
+  // padding: 40px;
   padding-bottom: 0;
   margin-bottom: 0;
   font-weight: 500;
